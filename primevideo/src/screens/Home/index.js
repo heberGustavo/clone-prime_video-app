@@ -3,6 +3,8 @@ import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native"
 import PrimeVideoLogo from "../../assets/prime_video.png";
 import AmazonLogo from "../../assets/amazon_logo.png";
 
+import MovieTheWheel from "../../assets/movies/the_wheel_of_time.png";
+
 export const Home = () => {
     return (
         <View style={styles.container}>
@@ -13,19 +15,23 @@ export const Home = () => {
 
             <View style={styles.category}>
                 <TouchableOpacity>
-                    <Text>Home</Text>
+                    <Text style={styles.categoryText}>Home</Text>
                 </TouchableOpacity>
                 <TouchableOpacity>
-                    <Text>Tv Shows</Text>
+                    <Text style={styles.categoryText}>Tv Shows</Text>
                 </TouchableOpacity>
                 <TouchableOpacity>
-                    <Text>Movidasdasdes</Text>
+                    <Text style={styles.categoryText}>Movies</Text>
                 </TouchableOpacity>
                 <TouchableOpacity>
-                    <Text>Kids</Text>
+                    <Text style={styles.categoryText}>Kids</Text>
                 </TouchableOpacity>
             </View>
 
+            <TouchableOpacity style={styles.movieImageThumbnail}>
+                <Image source={MovieTheWheel} style={styles.movieImage} />
+            </TouchableOpacity>
+            
         </View>
     )
 }
@@ -33,8 +39,7 @@ export const Home = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        //backgroundColor: "#232F3E",
-        backgroundColor: "#eeee",
+        backgroundColor: "#232F3E",
         alignItems: "flex-start"
     },
     header: {
@@ -50,6 +55,17 @@ const styles = StyleSheet.create({
     category: {
         width: "100%",
         flexDirection: "row",
-        justifyContent: "space-evenly"
+        justifyContent: "space-evenly",
+        marginTop: 30,
+        marginBottom: 15,
+    },
+    categoryText: {
+        fontSize: 14,
+        fontWeight: "700",
+        color: "#FFF",
+    },
+    movieImageThumbnail: {
+        width: "100%",
+        alignItems: "center",
     }
 });
