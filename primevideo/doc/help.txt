@@ -1,0 +1,4 @@
+RUN APP: Android
+    - To run app, open terminal and exec:
+        > npm install   
+        > npx expo run:android
