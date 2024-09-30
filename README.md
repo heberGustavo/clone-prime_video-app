@@ -39,7 +39,7 @@ $ git clone https://github.com/heberGustavo/clone-prime_video-app.git
 
 # 3. In Terminal, type:
   3.1 - npm install
-  3.2 - 'npx expo start' or 'npx expo run:android' (to run Android)
+  3.2 - 'npx expo start'
 
 # 4. Open the application in app or browser
 
