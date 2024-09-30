@@ -1,4 +1,4 @@
-import { TouchableOpacity } from "react-native";
+import { Image, StyleSheet, TouchableOpacity } from "react-native";
 
 export const MoviesCard = (props) => {
     return (
@@ -13,6 +13,6 @@ export const MoviesCard = (props) => {
 
 const styles = StyleSheet.create({
     img: {
-        marginLeft: 20,
+        marginRight: 20,
     }
 });
